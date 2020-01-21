@@ -10,7 +10,14 @@
 		335F372423D5828900146FF5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 335F372323D5828900146FF5 /* main.cpp */; };
 		335F372B23D582AD00146FF5 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 335F372A23D582AD00146FF5 /* player.cpp */; };
 		335F372D23D5879500146FF5 /* VideoState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 335F372C23D5879500146FF5 /* VideoState.cpp */; };
-		335F372F23D5898A00146FF5 /* PacketQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 335F372E23D5898A00146FF5 /* PacketQueue.cpp */; };
+		335F372F23D5898A00146FF5 /* Classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 335F372E23D5898A00146FF5 /* Classes.cpp */; };
+		335F373D23D691B700146FF5 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373623D691B700146FF5 /* libswresample.a */; };
+		335F373E23D691B800146FF5 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373723D691B700146FF5 /* libavfilter.a */; };
+		335F373F23D691B800146FF5 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373823D691B700146FF5 /* libavdevice.a */; };
+		335F374023D691B800146FF5 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373923D691B700146FF5 /* libavcodec.a */; };
+		335F374123D691B800146FF5 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373A23D691B700146FF5 /* libavutil.a */; };
+		335F374223D691B800146FF5 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373B23D691B700146FF5 /* libswscale.a */; };
+		335F374323D691B800146FF5 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F373C23D691B700146FF5 /* libavformat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +37,18 @@
 		335F372323D5828900146FF5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		335F372A23D582AD00146FF5 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = ../../../../source/player.cpp; sourceTree = "<group>"; };
 		335F372C23D5879500146FF5 /* VideoState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoState.cpp; path = ../../../../source/VideoState.cpp; sourceTree = "<group>"; };
-		335F372E23D5898A00146FF5 /* PacketQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketQueue.cpp; path = ../../../../source/PacketQueue.cpp; sourceTree = "<group>"; };
+		335F372E23D5898A00146FF5 /* Classes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Classes.cpp; path = ../../../../source/Classes.cpp; sourceTree = "<group>"; };
+		335F373623D691B700146FF5 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../3part/ffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		335F373723D691B700146FF5 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../3part/ffmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		335F373823D691B700146FF5 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../3part/ffmpeg/lib/libavdevice.a; sourceTree = "<group>"; };
+		335F373923D691B700146FF5 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../3part/ffmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		335F373A23D691B700146FF5 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../3part/ffmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		335F373B23D691B700146FF5 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../3part/ffmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		335F373C23D691B700146FF5 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../3part/ffmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+		335F374523D6945900146FF5 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		335F374623D6945900146FF5 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		335F374723D6945900146FF5 /* Classes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		335F374823D6945900146FF5 /* VideoState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335F373D23D691B700146FF5 /* libswresample.a in Frameworks */,
+				335F373E23D691B800146FF5 /* libavfilter.a in Frameworks */,
+				335F373F23D691B800146FF5 /* libavdevice.a in Frameworks */,
+				335F374023D691B800146FF5 /* libavcodec.a in Frameworks */,
+				335F374123D691B800146FF5 /* libavutil.a in Frameworks */,
+				335F374223D691B800146FF5 /* libswscale.a in Frameworks */,
+				335F374323D691B800146FF5 /* libavformat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +72,10 @@
 		335F371723D5828900146FF5 = {
 			isa = PBXGroup;
 			children = (
+				335F374423D6945900146FF5 /* include */,
 				335F372223D5828900146FF5 /* player */,
 				335F372123D5828900146FF5 /* Products */,
+				335F373523D691B700146FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +90,38 @@
 		335F372223D5828900146FF5 /* player */ = {
 			isa = PBXGroup;
 			children = (
-				335F372E23D5898A00146FF5 /* PacketQueue.cpp */,
+				335F372E23D5898A00146FF5 /* Classes.cpp */,
 				335F372A23D582AD00146FF5 /* player.cpp */,
 				335F372C23D5879500146FF5 /* VideoState.cpp */,
 				335F372323D5828900146FF5 /* main.cpp */,
 			);
 			path = player;
+			sourceTree = "<group>";
+		};
+		335F373523D691B700146FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				335F373923D691B700146FF5 /* libavcodec.a */,
+				335F373823D691B700146FF5 /* libavdevice.a */,
+				335F373723D691B700146FF5 /* libavfilter.a */,
+				335F373C23D691B700146FF5 /* libavformat.a */,
+				335F373A23D691B700146FF5 /* libavutil.a */,
+				335F373623D691B700146FF5 /* libswresample.a */,
+				335F373B23D691B700146FF5 /* libswscale.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		335F374423D6945900146FF5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				335F374523D6945900146FF5 /* define.h */,
+				335F374623D6945900146FF5 /* player.h */,
+				335F374723D6945900146FF5 /* Classes.h */,
+				335F374823D6945900146FF5 /* VideoState.h */,
+			);
+			name = include;
+			path = ../../../include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				335F372B23D582AD00146FF5 /* player.cpp in Sources */,
-				335F372F23D5898A00146FF5 /* PacketQueue.cpp in Sources */,
+				335F372F23D5898A00146FF5 /* Classes.cpp in Sources */,
 				335F372423D5828900146FF5 /* main.cpp in Sources */,
 				335F372D23D5879500146FF5 /* VideoState.cpp in Sources */,
 			);
@@ -251,8 +304,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../3part/ffmpeg/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../include";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../include",
+					"$(PROJECT_DIR)/../../../3part/ffmpeg/include",
+				);
 			};
 			name = Debug;
 		};
@@ -260,8 +317,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../3part/ffmpeg/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../include";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../include",
+					"$(PROJECT_DIR)/../../../3part/ffmpeg/include",
+				);
 			};
 			name = Release;
 		};

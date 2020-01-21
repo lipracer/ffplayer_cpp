@@ -4,7 +4,10 @@
 #include <string>
 #include <thread>
 #include <memory>
-#include "PacketQueue.h"
+#include "define.h"
+#include "Classes.h"
+
+#include "libavformat/avformat.h"
 
 using namespace std;
 
@@ -30,10 +33,13 @@ public:
     
 private:
     
-    shared_ptr<thread> m_th;
+    shared_ptr<thread> read_tid;
     
 //    PacketQueue<<#typename T#>> m_videoq;
     int read_thread();
+    
+    string filename;
+    AVInputFormat * iformat;
     
 };
 

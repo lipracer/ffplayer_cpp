@@ -18,8 +18,8 @@ VideoState::~VideoState()
 
 void VideoState::start_read_th()
 {
-    m_th = make_shared<thread>(&VideoState::read_thread, this);
-    m_th->detach();
+    read_tid = make_shared<thread>(&VideoState::read_thread, this);
+    read_tid->detach();
 }
 
 int VideoState::read_thread()

@@ -1,0 +1,9 @@
+#ifndef LL_DEFINE_H
+#define LL_DEFINE_H
+
+const int VIDEO_PICTURE_QUEUE_SIZE = 3;
+const int SUBPICTURE_QUEUE_SIZE = 16;
+const int SAMPLE_QUEUE_SIZE = 9;
+const int FRAME_QUEUE_SIZE = std::max(SAMPLE_QUEUE_SIZE, std::max(VIDEO_PICTURE_QUEUE_SIZE, SUBPICTURE_QUEUE_SIZE));
+
+#endif
